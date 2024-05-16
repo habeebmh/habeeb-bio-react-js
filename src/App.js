@@ -24,7 +24,9 @@ function App() {
       <div className={styles.container}>
         <header className={styles.header}>
           <Typography variant="h3">Habeeb Hooshmand</Typography>
-          <Typography variant='subtitle1'>habeeb@hooshmandenterprsies.com</Typography>
+          <Typography variant='subtitle1'>Staff Software Engineer</Typography>
+          <Typography variant='subtitle2'>Texas A&M Class of 2019</Typography>
+          <Typography variant='subtitle2'>habeeb@hooshmandenterprsies.com</Typography>
         </header>
         <article className={styles.body}>
           <About />
