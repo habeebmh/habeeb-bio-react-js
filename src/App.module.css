@@ -10,7 +10,6 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  gap: 2px;
 }
 
 .body {
@@ -32,4 +31,5 @@
   flex-direction: row;
   gap: 8px;
   align-items: center;
+  margin-top: 8px;
 }
