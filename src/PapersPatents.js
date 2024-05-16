@@ -56,8 +56,8 @@ export const papers = [
 const PapersPatents = () => {
   return (
     <>
-      {papers.map((paper) => (
-        <section style={{ marginBottom: '16px' }}>
+      {papers.map((paper, index) => (
+        <section style={{ marginBottom: '16px' }} key={index}>
           <Typography variant='h6'>
             <Link href={paper.url} target="_blank" rel="noopener noreferrer">{paper.title}</Link>
           </Typography>

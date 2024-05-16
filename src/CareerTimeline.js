@@ -1,12 +1,22 @@
-import { Typography, Link } from '@mui/material'; 
+import { Typography, Link, styled } from '@mui/material'; 
 import { TimelineOppositeContent, TimelineDot, Timeline, TimelineItem, TimelineSeparator, TimelineConnector, TimelineContent } from '@mui/lab';
 
 import HooshmandEnterprisesLogo from './assets/HooshmandEnterprisesLogo.png'
 
+const Description = styled('div')(({ theme }) => ({
+  ...theme.typography.body1,
+}));
+
+const ImageLink = styled(Link)(({ theme }) => ({
+  display: 'flex',
+  height: '32px',
+  width: '32px'
+}));
+
 const Position = ({ date, title, description }) => (
   <>
     <Typography variant='overline'>{title} | {date}</Typography>
-    <Typography variant='body2'>{description}</Typography>
+    <Description>{description}</Description>
   </>
 )
 
@@ -23,10 +33,10 @@ const CareerTimeline = () => {
           May 2022 &mdash; Present
         </TimelineOppositeContent>
         <TimelineSeparator>
-          <TimelineDot sx={{ backgroundColor: 'black', padding: '8px', width: '32px', height: '32px' }}>
-            <Link target='_blank' rel='noopener noreferrer' href='https://hooshmandenterprises.com'>
+          <TimelineDot color='primary' sx={{ padding: '8px' }}>
+            <ImageLink target='_blank' rel='noopener noreferrer' href='https://hooshmandenterprises.com'>
               <img width={'32px'} src={HooshmandEnterprisesLogo} alt="hooshmand enterprises logo" />
-            </Link>
+            </ImageLink>
           </TimelineDot>
           <TimelineConnector />
         </TimelineSeparator>
@@ -55,10 +65,10 @@ const CareerTimeline = () => {
           Feb 2022 &mdash; Present
         </TimelineOppositeContent>
         <TimelineSeparator>
-          <TimelineDot sx={{ backgroundColor: '#00adee', padding: '8px', height: '32px', width: '32px' }}>
-            <Link target='_blank' rel='noopener noreferrer' href='https://self.inc' sx={{ height: '32px', width: '32px', mt: '7px'}}>
+          <TimelineDot sx={{ backgroundColor: '#00adee', padding: '8px' }}>
+            <ImageLink target='_blank' rel='noopener noreferrer' href='https://self.inc'>
               <img width={'32px'} src={'https://www.self.inc/static/Self_Logo_Header.svg'} alt="self inc logo" />
-            </Link>
+            </ImageLink>
           </TimelineDot>
           <TimelineConnector />
         </TimelineSeparator>
@@ -90,10 +100,10 @@ const CareerTimeline = () => {
           Aug 2019 &mdash; Feb 2022
         </TimelineOppositeContent>
         <TimelineSeparator>
-          <TimelineDot sx={{ backgroundColor: '#fafaff', padding: '8px', height: '32px', width: '32px' }}>
-            <Link target='_blank' rel='noopener noreferrer' href='https://capitalone.com'>
-              <img width={'32px'} src={'https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/e4/c1/c8/e4c1c8da-da07-f5e6-f30f-a2c80b13eedc/AppIcon-0-0-1x_U007emarketing-0-7-0-85-220.png/256x256bb.jpg'} alt="capital one logo" />
-            </Link>
+          <TimelineDot sx={{ backgroundColor: '#fafaff', padding: '8px' }}>
+            <ImageLink target='_blank' rel='noopener noreferrer' href='https://capitalone.com'>
+              <img width={'32px'} height={'32px'} src={'https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/e4/c1/c8/e4c1c8da-da07-f5e6-f30f-a2c80b13eedc/AppIcon-0-0-1x_U007emarketing-0-7-0-85-220.png/256x256bb.jpg'} alt="capital one logo" />
+            </ImageLink>
           </TimelineDot>
           <TimelineConnector />
         </TimelineSeparator>
@@ -123,7 +133,7 @@ const CareerTimeline = () => {
           Jan 2017 &mdash; Jun 2019
         </TimelineOppositeContent>
         <TimelineSeparator>
-          <TimelineDot sx={{ backgroundColor: '#fafaff', padding: '8px', height: '32px' }}>
+          <TimelineDot sx={{ backgroundColor: '#fafaff', padding: '8px' }}>
             <img width={'32px'} height={'26px'} style={{ marginTop: '3px' }} src={'https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Texas_A%26M_University_logo.svg/494px-Texas_A%26M_University_logo.svg.png'} alt="capital one logo" />
           </TimelineDot>
         </TimelineSeparator>
