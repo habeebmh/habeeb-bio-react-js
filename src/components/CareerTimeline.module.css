@@ -1,0 +1,34 @@
+.leftText {
+  margin: 22px 0 !important;
+  flex: 0.5 1 0% !important;
+}
+
+.rightDateText {
+  display: none;
+}
+
+.container {
+  margin: -16px 0 0;
+}
+
+.positionContainer {
+  margin: 8px 0;
+}
+
+.positionTitleDateContainer {
+  display: flex;
+}
+
+@media only screen and (max-width: 600px) {
+  .leftText {
+    display: none;
+  }
+
+  .rightDateText {
+    display: block;
+  }
+
+  .rightDateText > hr {
+    margin-top: 8px !important;
+  }
+}
