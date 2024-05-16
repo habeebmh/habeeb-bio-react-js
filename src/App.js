@@ -19,8 +19,6 @@ function App() {
     [prefersDarkMode],
   );
 
-  console.log(prefersDarkMode)
-
   return (
     <ThemeProvider theme={theme}>
       <div className={styles.container}>
