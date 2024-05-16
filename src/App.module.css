@@ -1,0 +1,22 @@
+.container {
+  max-width: 100%;
+  width: 1000px;
+  margin: 16px auto;
+}
+
+.header {
+  text-align: center;
+}
+
+.body {
+  margin-bottom: 16px;
+}
+
+.sectionTitle {
+  text-align: center;
+}
+
+.copyline {
+  display: block;
+  text-align: center;
+}
