@@ -4,10 +4,18 @@ import './index.css';
 import App from './App';
 
 // Cache busting old ServiceWorker
-caches.keys().then(function(names) {
-  for (let name of names)
-      caches.delete(name);
-});
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.ready.then(registration => {
+    registration.unregister();
+
+    if (caches) {
+      // Service worker cache should be cleared with caches.delete()
+      caches.keys().then(async (names) => {
+        await Promise.all(names.map(name => caches.delete(name)));
+      });
+    }
+  });
+}
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
