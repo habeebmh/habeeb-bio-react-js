@@ -18,6 +18,8 @@ const About = () => {
           I am also the founder of <Link href="https://hooshmandenterprises.com" target="blank" rel="noopener noreferrer">Hooshmand Enterprises LLC</Link>. 
         </Typography>
 
+        <Typography>In my spare, time I referee Soccer in the NCAA, MASL, and Lower Division Pro Leagues.</Typography>
+
         <Typography>I graduated from Texas A&M University in 2019.</Typography>
 
         <Typography>

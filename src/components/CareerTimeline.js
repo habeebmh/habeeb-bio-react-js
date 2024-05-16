@@ -20,7 +20,7 @@ const SpecialDivider = styled(Divider)(() => ({
 
 const Position = ({ date, title, description }) => (
   <div className={styles.positionContainer}>
-    <Typography variant='overline'>{title}</Typography> &mdash; <Typography variant='overline'>{date}</Typography>
+    <Typography variant='overline'>{title}</Typography> &#47;&#47; <Typography variant='overline'>{date}</Typography>
     <Description>{description}</Description>
   </div>
 )

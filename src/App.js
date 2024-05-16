@@ -1,5 +1,5 @@
 import { useMemo } from 'react'
-import { Typography, useMediaQuery, ThemeProvider, createTheme, CssBaseline, Divider } from '@mui/material';
+import { Typography, useMediaQuery, ThemeProvider, createTheme, CssBaseline, Divider, Link } from '@mui/material';
 
 import styles from './App.module.css'
 import PapersPatents from './components/PapersPatents';
@@ -27,6 +27,15 @@ function App() {
           <Typography variant='subtitle1'>Staff Software Engineer</Typography>
           <Typography variant='subtitle2'>Texas A&M Class of 2019</Typography>
           <Typography variant='subtitle2'>habeeb@hooshmandenterprsies.com</Typography>
+          <section className={styles.links}>
+            <Link target='_blank' rel='noopener noreferrer' variant='subtitle2' href='https://www.linkedin.com/in/habeebhooshmand/'>LinkedIn</Link>
+            <Divider orientation='vertical' flexItem />
+            <Link target='_blank' rel='noopener noreferrer' variant='subtitle2' href='https://github.com/habeebmh'>GitHub</Link>
+            <Divider orientation='vertical' flexItem />
+            <Link target='_blank' rel='noopener noreferrer' variant='subtitle2' href='https://scholar.google.com/citations?user=iP66x48AAAAJ&hl=en'>Google Scholar</Link>
+            <Divider orientation='vertical' flexItem />
+            <Link target='_blank' rel='noopener noreferrer' variant='subtitle2' href='https://www.instagram.com/habeeb.hooshmand/'>Instagram</Link>
+          </section>
         </header>
         <article className={styles.body}>
           <About />
