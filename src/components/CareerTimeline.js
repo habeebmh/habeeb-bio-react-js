@@ -53,11 +53,15 @@ const CareerTimeline = () => {
               date={'May 2022 to Present'} 
               title={'Founder'} 
               description={(
-                <ul>
-                  <li>Independent venture founded in 2022.</li>
-                  <li>Owner of <Link target='_blank' rel='noopener noreferrer' href="https://refreport.net">Ref Report</Link> for digital reporting.</li>
-                  <li>Creator of <Link target='_blank' rel='noopener noreferrer' href="https://apps.apple.com/us/app/refclock-timer/id6476637373">RefClock Timer</Link> for soccer referees.</li>
-                </ul>
+                <>
+                  <Typography>Projects & Partnerships:</Typography>
+                  <ul>
+                    <li><Link href='https://famousindallas.com'>Famous in Dallas</Link> &mdash; Digital marketing and sales for an independent fashion brand based in Dallas, TX.</li>
+                    <li><Link href='https://refereport.net'>RefReport</Link> &mdash; Digital reporting for sports officials.</li>
+                    <li><Link href='https://www.dfoa.com/'>DFOA</Link> &mdash; Football official draft software.</li>
+                    <li>Creator of <Link target='_blank' rel='noopener noreferrer' href="https://apps.apple.com/us/app/refclock-timer/id6476637373">RefClock Timer</Link> for soccer referees.</li>
+                  </ul>
+                </>
               )} 
             />
           </TimelineContent>
