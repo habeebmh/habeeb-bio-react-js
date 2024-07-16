@@ -59,7 +59,7 @@ const CareerTimeline = () => {
                     <li><Link href='https://famousindallas.com' target='_blank' rel='noopener noreferrer'>Famous in Dallas</Link> &mdash; Digital marketing and sales for an independent fashion brand based in Dallas, TX.</li>
                     <li><Link href='https://refereport.net' target='_blank' rel='noopener noreferrer'>RefReport</Link> &mdash; Digital reporting for sports officials.</li>
                     <li><Link href='https://www.dfoa.com/' target='_blank' rel='noopener noreferrer'>DFOA</Link> &mdash; Football official draft software.</li>
-                    <li>Creator of <Link target='_blank' rel='noopener noreferrer' href="https://apps.apple.com/us/app/refclock-timer/id6476637373">RefClock Timer</Link> for soccer referees.</li>
+                    <li><Link href="https://apps.apple.com/us/app/refclock-timer/id6476637373" target='_blank' rel='noopener noreferrer'>RefClock Timer</Link> &mdash; Timer app for soccer referees.</li>
                   </ul>
                 </>
               )} 
