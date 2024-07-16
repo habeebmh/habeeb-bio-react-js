@@ -1,7 +1,6 @@
 import { Typography, Link, styled, Divider } from '@mui/material'; 
 import { TimelineOppositeContent, TimelineDot, Timeline, TimelineItem, TimelineSeparator, TimelineConnector, TimelineContent } from '@mui/lab';
 
-import HooshmandEnterprisesLogo from '../assets/HooshmandEnterprisesLogo.png'
 import styles from './CareerTimeline.module.css'
 
 const Description = styled('div')(({ theme }) => ({
@@ -41,7 +40,7 @@ const CareerTimeline = () => {
           <TimelineSeparator>
             <TimelineDot color='primary' sx={{ padding: '8px', backgroundColor: '#013C7B' }}>
               <ImageLink target='_blank' rel='noopener noreferrer' href='https://hooshmandenterprises.com'>
-                <img width={'32px'} src={HooshmandEnterprisesLogo} alt="hooshmand enterprises logo" />
+                <img width={'32px'} src='/assets/HooshmandEnterprisesLogo.png' alt="hooshmand enterprises logo" />
               </ImageLink>
             </TimelineDot>
             <TimelineConnector />

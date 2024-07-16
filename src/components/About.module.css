@@ -6,9 +6,9 @@
 }
 
 .bigImage {
-  max-width: 90%;
   width: 350px;
   border-radius: 16px;
+  max-width: 100%;
 }
 
 .textContainer {
@@ -30,5 +30,6 @@
 @media only screen and (max-width: 768px) {
   .sideBySide {
     flex-flow: column-reverse wrap;
+    align-items: center;
   }
 }

@@ -1,6 +1,5 @@
 import { Typography, Link } from '@mui/material'
 
-import HabeebImage from '../assets/HabeebImage.webp'
 import styles from './About.module.css'
 
 const About = () => {
@@ -27,7 +26,10 @@ const About = () => {
         </Typography>
       </section>
       <section className={styles.imageContainer}>
-        <img className={styles.bigImage} src={HabeebImage} alt="Habeeb Hooshmand (me)" />
+        <picture>
+          <source srcSet='/assets/HabeebImage.webp' type="image/webp" />
+          <img className={styles.bigImage} src='/assets/HabeebImage.jpg' alt="Habeeb Hooshmand (me)" />
+        </picture>
       </section>
     </div>
   )
