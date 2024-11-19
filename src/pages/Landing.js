@@ -4,7 +4,6 @@ import { useMediaQuery } from '@mui/material'
 import Navigation from '../components/Navigation'
 
 import styles from './Landing.module.css'
-import Footer from '../components/Footer'
 
 const Landing = () => {
   const prefersDarkMode = useMediaQuery('(prefers-color-scheme: dark)');
