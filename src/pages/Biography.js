@@ -1,5 +1,5 @@
 import React from 'react'
-import { Divider, Link, Typography } from '@mui/material';
+import { Divider, Typography } from '@mui/material';
 
 import CareerTimeline from '../components/CareerTimeline';
 import About from '../components/About'
@@ -16,16 +16,15 @@ const Biography = () => {
         <Navigation />
         <Typography variant="h3">Habeeb Hooshmand</Typography>
         <Typography variant='subtitle1'>Staff Software Engineer | DJ | Entrepreneur | Referee</Typography>
-        <Typography variant='subtitle2'>Texas A&M Class of 2019</Typography>
-        <Typography variant='subtitle2'>habeeb@hooshmandenterprsies.com</Typography>
+        <Typography variant='subtitle2' component='a' href='mailto:habeeb@hooshmandenterprsies.com' color='primary'>habeeb@hooshmandenterprsies.com</Typography>
         <section className={styles.links}>
-          <Link target='_blank' rel='noopener noreferrer' variant='subtitle2' href='https://www.instagram.com/iamhabeebh/'>Instagram</Link>
+          <Typography target='_blank' rel='noopener noreferrer' variant='subtitle2' component='a' color='primary' href='https://www.instagram.com/iamhabeebh/'>Instagram</Typography>
           <Divider orientation='vertical' flexItem />
-          <Link target='_blank' rel='noopener noreferrer' variant='subtitle2' href='https://www.linkedin.com/in/habeebhooshmand/'>LinkedIn</Link>
+          <Typography target='_blank' rel='noopener noreferrer' variant='subtitle2' component='a' color='primary' href='https://www.linkedin.com/in/habeebhooshmand/'>LinkedIn</Typography>
           <Divider orientation='vertical' flexItem />
-          <Link target='_blank' rel='noopener noreferrer' variant='subtitle2' href='https://github.com/habeebmh'>GitHub</Link>
+          <Typography target='_blank' rel='noopener noreferrer' variant='subtitle2' component='a' color='primary' href='https://github.com/habeebmh'>GitHub</Typography>
           <Divider orientation='vertical' flexItem />
-          <Link target='_blank' rel='noopener noreferrer' variant='subtitle2' href='https://scholar.google.com/citations?user=iP66x48AAAAJ&hl=en'>Google Scholar</Link>
+          <Typography target='_blank' rel='noopener noreferrer' variant='subtitle2' component='a' color='primary' href='https://scholar.google.com/citations?user=iP66x48AAAAJ&hl=en'>Google Scholar</Typography>
         </section>
       </header>
       <div className={common.container}>
