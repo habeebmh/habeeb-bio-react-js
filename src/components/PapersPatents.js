@@ -66,8 +66,8 @@ const PapersPatents = () => {
         </section>
       ))}
       <Typography variant='subtitle1'>
-          Check out my all my patents and papers on <Link href="https://scholar.google.com/citations?user=iP66x48AAAAJ" target="_blank" rel="noopener noreferrer">Google Scholar</Link>.
-        </Typography>
+        Check out my all my patents and papers on <Link href="https://scholar.google.com/citations?user=iP66x48AAAAJ" target="_blank" rel="noopener noreferrer">Google Scholar</Link>.
+      </Typography>
     </>
   )
 }

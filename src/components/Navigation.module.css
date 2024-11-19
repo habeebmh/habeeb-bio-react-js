@@ -1,0 +1,22 @@
+.nav {
+  display: flex;
+  align-items: center;
+  padding: 8px 16px;
+  justify-content: center;
+  width: 100vw;
+  z-index: 9999;
+  margin-bottom: 1em;
+  border-bottom: 1px solid #eaeaea;
+  gap: 8px;
+}
+
+.navItem {
+  padding: 8px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.navItem:hover {
+  background-color: white;
+  color: black;
+}

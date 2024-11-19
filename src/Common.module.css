@@ -1,0 +1,11 @@
+.container {
+  max-width: calc(100% - 16px);
+  width: 1000px;
+  margin: 16px auto;
+  padding: 8px;
+}
+
+.sectionTitle {
+  text-align: center;
+  margin: 16px 0 !important; 
+}

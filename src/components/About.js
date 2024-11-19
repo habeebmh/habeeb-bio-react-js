@@ -10,20 +10,19 @@ const About = () => {
         <Typography variant='h6'>Hi! I'm <strong>Habeeb</strong>.</Typography>
 
         <Typography>
-          I am a Staff Software Engineer  at <Link href="https://www.self.inc" target="_blank" rel="noopener noreferrer" >Self</Link>.
+          I do a lot of different things.
         </Typography>
 
         <Typography>
-          I am also the founder of <Link href="https://hooshmandenterprises.com" target="blank" rel="noopener noreferrer">Hooshmand Enterprises LLC</Link>. 
+          <ol>
+            <li>I am a House DJ and Producer based in Dallas, Texas.</li>
+            <li>I am a Staff Software Engineer  at <Link href="https://www.self.inc" target="_blank" rel="noopener noreferrer" >Self</Link>.</li>
+            <li>I am also the founder of <Link href="https://hooshmandenterprises.com" target="blank" rel="noopener noreferrer">Hooshmand Enterprises LLC</Link>.</li>
+            <li>I am a Soccer Referee in the NCAA, MASL, and Lower Division Pro Leagues.</li>
+          </ol>
         </Typography>
-
-        <Typography>In my spare, time I referee Soccer in the NCAA, MASL, and Lower Division Pro Leagues.</Typography>
 
         <Typography>I graduated from Texas A&M University in 2019.</Typography>
-
-        <Typography>
-          Check out some of my work: <Link href="https://scholar.google.com/citations?user=iP66x48AAAAJ" target="_blank" rel="noopener noreferrer" >Google Scholar</Link>, <Link href="https://github.com/habeebmh" target="_blank" rel="noopener noreferrer" >GitHub</Link>
-        </Typography>
       </section>
       <section className={styles.imageContainer}>
         <picture>
