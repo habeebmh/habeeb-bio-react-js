@@ -19,9 +19,8 @@ const Landing = () => {
             alt={'Habeeb\'s signature.'} 
           />
         </a>
-        <Navigation hideHome />
       </article>
-      <Footer />
+      <Navigation hideHome bottom sticky />
     </>
   )
 }

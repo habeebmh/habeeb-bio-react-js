@@ -13,14 +13,12 @@ const About = () => {
           I do a lot of different things.
         </Typography>
 
-        <Typography>
-          <ol>
-            <li>I am a House DJ and Producer based in Dallas, Texas.</li>
-            <li>I am a Staff Software Engineer  at <Link href="https://www.self.inc" target="_blank" rel="noopener noreferrer" >Self</Link>.</li>
-            <li>I am also the founder of <Link href="https://hooshmandenterprises.com" target="blank" rel="noopener noreferrer">Hooshmand Enterprises LLC</Link>.</li>
-            <li>I am a Soccer Referee in the NCAA, MASL, and Lower Division Pro Leagues.</li>
-          </ol>
-        </Typography>
+        <ul>
+          <li><Typography>I am a House DJ and Producer based in Dallas, Texas.</Typography></li>
+          <li><Typography>I am a Staff Software Engineer  at <Link href="https://www.self.inc" target="_blank" rel="noopener noreferrer" >Self</Link>.</Typography></li>
+          <li><Typography>I am also the founder of <Link href="https://hooshmandenterprises.com" target="blank" rel="noopener noreferrer">Hooshmand Enterprises LLC</Link>.</Typography></li>
+          <li><Typography>I am a Soccer Referee in the NCAA, MASL, and Lower Division Pro Leagues.</Typography></li>
+        </ul>
 
         <Typography>I graduated from Texas A&M University in 2019.</Typography>
       </section>

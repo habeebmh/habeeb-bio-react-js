@@ -1,14 +1,13 @@
 .logo {
     max-width: calc(100vw - 16px);
     max-height: 100vh;
-    margin: 0 auto;
     display: block;
-    height: calc(100vh - 11em);
 }
 
 .container {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    min-height: 100vh;
 }
