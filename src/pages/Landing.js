@@ -1,12 +1,10 @@
 import React from 'react'
-import { useMediaQuery } from '@mui/material'
 
 import Navigation from '../components/Navigation'
 
 import styles from './Landing.module.css'
 
 const Landing = () => {
-  const prefersDarkMode = useMediaQuery('(prefers-color-scheme: dark)');
 
   return (
     <>
@@ -14,7 +12,7 @@ const Landing = () => {
         <a href='/about'>
           <img 
             className={styles.logo} 
-            src={`/assets/habeeb-sign-${prefersDarkMode ? 'white' : 'black'}.png`} 
+            src={'/assets/habeeb-logo.png'} 
             alt={'Habeeb\'s signature.'} 
           />
         </a>
