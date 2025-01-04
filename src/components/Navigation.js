@@ -9,9 +9,8 @@ const Navigation = ({ hideHome, bottom, sticky }) => {
       {!hideHome && (
         <Typography variant='body1' className={styles.navItem} component='a' href='/' color='primary' hidden={hideHome}>Home</Typography>
       )}
-      <Typography variant='body1' className={styles.navItem} component='a' href='/about' color='primary'>About</Typography>
       <Typography variant='body1' className={styles.navItem} component='a' href='/papers-patents' color='primary'>Inventions</Typography>
-      <Typography variant='body1' className={styles.navItem} component='a' href='https://soundcloud.com/iamhabeeb' target='_blank' rel='noopener noreferrer' color='primary'>Music</Typography>
+      <Typography variant='body1' className={styles.navItem} component='a' href='https://djhabeeb.com' target='_blank' rel='noopener noreferrer' color='primary'>Music</Typography>
     </nav>
   );
 }

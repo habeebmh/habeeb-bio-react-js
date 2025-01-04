@@ -2,12 +2,11 @@ import { useMemo } from 'react'
 import { useMediaQuery, ThemeProvider, createTheme, CssBaseline } from '@mui/material';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
-import Landing from './pages/Landing';
 import Biography from './pages/Biography';
 import Papers from './pages/Papers';
 
 const router = createBrowserRouter([
-    { path: '/', element: <Landing /> },
+    { path: '/', element: <Biography /> },
     { path: '/about', element: <Biography /> },
     { path: '/papers-patents', element: <Papers /> },
   ]
