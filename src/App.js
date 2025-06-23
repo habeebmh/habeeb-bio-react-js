@@ -3,12 +3,9 @@ import { useMediaQuery, ThemeProvider, createTheme, CssBaseline } from '@mui/mat
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 import Biography from './pages/Biography';
-import Papers from './pages/Papers';
 
 const router = createBrowserRouter([
-    { path: '/', element: <Biography /> },
-    { path: '/about', element: <Biography /> },
-    { path: '/papers-patents', element: <Papers /> },
+    { path: '/', element: <Biography /> }
   ]
 );
 

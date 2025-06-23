@@ -8,12 +8,12 @@ import Navigation from '../components/Navigation';
 import styles from './Biography.module.css';
 import common from '../Common.module.css'
 import Footer from '../components/Footer';
+import PapersPatents from '../components/PapersPatents';
 
 const Biography = () => {
   return (
     <>
       <header className={styles.header}>
-        <Navigation />
         <Typography variant="h3">Habeeb Hooshmand</Typography>
         <Typography variant='subtitle1'>Staff Software Engineer | DJ | Entrepreneur | Referee</Typography>
         <Typography variant='subtitle2' component='a' href='mailto:habeeb@hooshmandenterprsies.com' color='primary'>habeeb@hooshmandenterprsies.com</Typography>
@@ -33,8 +33,12 @@ const Biography = () => {
           <Divider />
           <Typography variant="h4" className={common.sectionTitle}>My career</Typography>
           <CareerTimeline />
+          <Divider />
+          <Typography variant="h4" className={common.sectionTitle}>Papers &amp; Patents</Typography>
+          <PapersPatents />
         </article>
-    </div>
+      </div>
+    <Divider />
     <Footer />
    </>
   )
