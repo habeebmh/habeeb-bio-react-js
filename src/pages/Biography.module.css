@@ -1,19 +1,8 @@
-.header {
-  text-align: center;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  margin-top: 1em;
-}
-
-.body {
-  margin-bottom: 16px;
-}
-
-.links {
-  display: flex;
-  flex-direction: row;
-  gap: 8px;
-  align-items: center;
-  margin-top: 8px;
-}
+.page { max-width: 1240px; margin: auto; padding: 0 40px; }
+.section { padding: 88px 0; border-top: 1px solid var(--line); scroll-margin-top: 32px; }
+.sectionHeader { display: flex; justify-content: space-between; align-items: end; gap: 32px; margin-bottom: 48px; }
+.sectionHeader h2 { margin: 12px 0 0; font-size: clamp(28px, 3vw, 38px); letter-spacing: -1.3px; line-height: 1.2; font-weight: 650; }
+.sectionHeader > p { color: var(--muted); font-size: 14px; line-height: 1.8; margin: 0; }
+.connect { border-top: 1px solid var(--line); text-align: center; padding: 72px 20px; }
+.connect h2 { font-size: clamp(28px, 4vw, 44px); letter-spacing: -1.5px; max-width: 620px; margin: 20px auto 28px; line-height: 1.2; }
+@media (max-width: 700px) { .page { padding: 0 22px; } .section { padding: 56px 0; } .sectionHeader { display: block; margin-bottom: 30px; } .sectionHeader > p { margin-top: 18px; } }

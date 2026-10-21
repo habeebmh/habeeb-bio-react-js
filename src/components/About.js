@@ -1,35 +1,33 @@
-import { Typography, Link } from '@mui/material'
+import styles from './About.module.css';
 
-import styles from './About.module.css'
-
-const About = () => {
-
-  return (
-    <div className={styles.sideBySide}>
-      <section className={styles.textContainer}>
-        <Typography variant='h6'>Hi! I'm <strong>Habeeb</strong>.</Typography>
-
-        <Typography>
-          I do a lot of different things.
-        </Typography>
-
-        <ul>
-          <li><Typography>I am a House DJ and Producer based in Dallas, Texas.</Typography></li>
-          <li><Typography>I am a Staff Software Engineer  at <Link href="https://www.self.inc" target="_blank" rel="noopener noreferrer" >Self</Link>.</Typography></li>
-          <li><Typography>I am also the founder of <Link href="https://hooshmandenterprises.com" target="blank" rel="noopener noreferrer">Hooshmand Enterprises LLC</Link>.</Typography></li>
-          <li><Typography>I am a Soccer Referee in the NCAA, MASL, and Lower Division Pro Leagues.</Typography></li>
-        </ul>
-
-        <Typography>I graduated from Texas A&M University in 2019.</Typography>
-      </section>
-      <section className={styles.imageContainer}>
-        <picture>
-          <source srcSet='/assets/HabeebImage.webp' type="image/webp" />
-          <img className={styles.bigImage} src='/assets/HabeebImage.jpg' alt="Habeeb Hooshmand (me)" />
-        </picture>
-      </section>
+const About = () => (
+  <section id="about" className={styles.about} aria-labelledby="intro-heading">
+    <div className={styles.hero}>
+      <div className={styles.intro}>
+        <p className="eyebrow"><span className={styles.locationDot} /> DALLAS, TEXAS</p>
+        <h1 id="intro-heading">Habeeb<br /><span>Hooshmand.</span></h1>
+        <p className={styles.roles}>Engineer. Entrepreneur.<br />DJ. Referee.</p>
+        <p className={styles.description}>I build software, bring people together through music, and stay close to the game. Different worlds. The same curiosity.</p>
+        <div className={styles.actions}><a className="button" href="#experience">Explore my work <span aria-hidden="true">↓</span></a><a href="https://nightmethodagency.com/habeeb" target="_blank" rel="noopener noreferrer" className={styles.music}>Discover my music <span aria-hidden="true">↗</span></a></div>
+        <div className={styles.socials} aria-label="Social profiles">
+          <a href="https://www.linkedin.com/in/habeebhooshmand/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+          <a href="https://github.com/habeebmh" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+          <a href="https://www.instagram.com/iamhabeebh/" target="_blank" rel="noopener noreferrer">Instagram ↗</a>
+          <a href="https://scholar.google.com/citations?user=iP66x48AAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Scholar ↗</a>
+        </div>
+      </div>
+      <figure className={styles.portrait}>
+        <img src="/assets/HabeebPortrait.webp" alt="Habeeb Hooshmand in a professional studio portrait" width="1000" height="1500" />
+        <figcaption><span>A little bit of everything.</span></figcaption>
+      </figure>
     </div>
-  )
-}
-
-export default About
+    <div className={styles.facets}>
+      <div><span className={styles.number}>01</span><h2>Engineering</h2><p>Staff Software Engineer at <a href="https://www.self.inc" target="_blank" rel="noopener noreferrer">Self ↗</a></p></div>
+      <div><span className={styles.number}>02</span><h2>Entrepreneurship</h2><p>Founder of <a href="https://hooshmandenterprises.com" target="_blank" rel="noopener noreferrer">Hooshmand Enterprises ↗</a></p></div>
+      <div><span className={styles.number}>03</span><h2>Music</h2><p>House DJ & producer.<br /><a href="https://nightmethodagency.com/habeeb" target="_blank" rel="noopener noreferrer">Behind the decks ↗</a></p></div>
+      <div><span className={styles.number}>04</span><h2>On the pitch</h2><p>Soccer referee in the NCAA, MASL & lower division pro leagues.</p></div>
+    </div>
+    <p className={styles.education}>Texas A&M University <span> / </span> Class of 2019</p>
+  </section>
+);
+export default About;

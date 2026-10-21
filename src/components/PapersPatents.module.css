@@ -1,0 +1,7 @@
+.paper { display: grid; grid-template-columns: 100px 1fr; gap: 24px; padding: 28px 0; border-top: 1px solid var(--line); }
+.year { color: var(--muted); font-family: monospace; font-size: 13px; padding-top: 5px; }
+.title { max-width: 850px; font-size: 19px !important; line-height: 1.5 !important; }.title a { color: var(--ink); text-decoration: none; }.title a:hover { color: var(--accent); }
+.authors { color: var(--muted); font-size: 12px; line-height: 1.7; margin: 12px 0; }.authors strong { font-weight: 600; }
+.abstract { color: var(--muted); }.abstract summary { cursor: pointer; color: var(--accent); font-size: 12px; width: fit-content; padding: 4px 0; }.abstract p { max-width: 850px; margin-top: 16px; line-height: 1.8; }
+.scholar { display: inline-block; font-size: 13px; color: var(--accent); margin-top: 24px; text-decoration: none; font-weight: 600; }
+@media (max-width: 600px) { .paper { grid-template-columns: 1fr; gap: 8px; }.title { font-size: 17px !important; } }

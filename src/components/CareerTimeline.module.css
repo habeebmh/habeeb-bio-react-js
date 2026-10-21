@@ -1,34 +1,18 @@
-.leftText {
-  margin: 22px 0 !important;
-  flex: 0.5 1 0% !important;
-}
+.container { margin: 0; }
+.container :global(.MuiTimeline-root) { padding: 0; margin: 0; }
+.leftText { margin: 21px 24px 0 0 !important; flex: 0 0 170px !important; font-family: monospace !important; font-size: 11px !important; padding-left: 0 !important; }
+.container :global(.MuiTimelineContent-root) { min-width: 0; margin: 0 0 30px 24px; padding: 24px 30px !important; border: 1px solid var(--line); border-radius: 8px; background: var(--surface); }
+.container :global(.MuiTimelineDot-root) { box-shadow: none; margin-top: 14px; }
+.container :global(.MuiTimelineConnector-root) { width: 1px; background-color: var(--line); }
+.container :global(.MuiTimelineItem-root:last-child .MuiTimelineConnector-root) { display: none; }
+.container :global(.MuiTimelineContent-root) > h3 { font-size: 21px; letter-spacing: -.4px; }
+.container :global(.MuiLink-root) { text-decoration-color: var(--line); }
+.positionContainer { margin-top: 16px; }
+.positionContainer :global(.MuiTypography-overline) { font-size: 10px; line-height: 1.7; letter-spacing: .6px; color: var(--muted); }
+.positionContainer ul { padding-left: 19px; margin: 12px 0; }
+.positionContainer li { margin: 6px 0; color: var(--muted); font-size: 14px; line-height: 1.8; }
+.rightDateText { display: none; }
+@media (max-width: 900px) { .leftText { flex-basis: 120px !important; margin-right: 12px !important; }.container :global(.MuiTimelineContent-root) { padding: 22px !important; margin-left: 16px; } }
+@media (max-width: 600px) { .leftText { display: none; }.rightDateText { display: block; }.container :global(.MuiTimelineItem-root)::before { display: none; }.container :global(.MuiTimelineContent-root) { margin-left: 12px; padding: 18px !important; }.container :global(.MuiTimelineContent-root) > h3 { font-size: 19px; }.positionContainer li { font-size: 13px; }.container :global(.MuiTimelineDot-root) { padding: 5px !important; }.container :global(.MuiTimelineDot-root) img { width: 25px; height: 25px; object-fit: contain; }.container :global(.MuiTimelineDot-root) a { width: 25px; height: 25px; } }
 
-.rightDateText {
-  display: none;
-}
-
-.container {
-  margin: -16px 0 0;
-}
-
-.positionContainer {
-  margin: 8px 0;
-}
-
-.positionTitleDateContainer {
-  display: flex;
-}
-
-@media only screen and (max-width: 600px) {
-  .leftText {
-    display: none;
-  }
-
-  .rightDateText {
-    display: block;
-  }
-
-  .rightDateText > hr {
-    margin-top: 8px !important;
-  }
-}
+.universityMark { width: 32px; height: 32px; display: grid; place-items: center; color: #500000; font-family: Georgia, serif; font-size: 12px; font-weight: bold; }

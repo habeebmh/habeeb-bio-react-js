@@ -1,4 +1,5 @@
 import { Typography, Link } from '@mui/material';
+import styles from './PapersPatents.module.css';
 
 
 export const papers = [
@@ -53,23 +54,25 @@ export const papers = [
   },
 ];
 
-const PapersPatents = () => {
-  return (
-    <>
-      {papers.map((paper, index) => (
-        <section style={{ marginBottom: '16px' }} key={index}>
-          <Typography variant='h6'>
-            <Link href={paper.url} target="_blank" rel="noopener noreferrer">{paper.title}</Link>
+const PapersPatents = () => (
+  <div>
+    {papers.map((paper) => (
+      <article className={styles.paper} key={paper.url}>
+        <span className={styles.year}>{paper.year}</span>
+        <div>
+          <Typography component="h3" variant="h6" className={styles.title}>
+            <Link href={paper.url} target="_blank" rel="noopener noreferrer">{paper.title} <span aria-hidden="true">↗</span></Link>
           </Typography>
-          <Typography variant='body1'>{paper.year} &mdash; {paper.authors}</Typography>
-          <Typography variant="body2">{paper.description}</Typography>
-        </section>
-      ))}
-      <Typography variant='subtitle1'>
-        Check out my all my patents and papers on <Link href="https://scholar.google.com/citations?user=iP66x48AAAAJ" target="_blank" rel="noopener noreferrer">Google Scholar</Link>.
-      </Typography>
-    </>
-  )
-}
+          <p className={styles.authors}>{paper.authors}</p>
+          <details className={styles.abstract}>
+            <summary>Read abstract</summary>
+            <Typography variant="body2">{paper.description}</Typography>
+          </details>
+        </div>
+      </article>
+    ))}
+    <a className={styles.scholar} href="https://scholar.google.com/citations?user=iP66x48AAAAJ" target="_blank" rel="noopener noreferrer">View all papers & patents on Google Scholar ↗</a>
+  </div>
+);
 
-export default PapersPatents
+export default PapersPatents;

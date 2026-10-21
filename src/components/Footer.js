@@ -1,14 +1,9 @@
-import React from 'react';
-import { Typography } from '@mui/material';
-
 import styles from './Footer.module.css';
-
-const Footer = () => {
-  return (
-    <footer>
-      <Typography variant='caption' className={styles.copyline}>&copy; {new Date().getFullYear()} Habeeb Hooshmand</Typography>
-    </footer>
-  );
-}
-
+const Footer = () => (
+  <footer className={styles.footer}>
+    <span>© {new Date().getFullYear()} Habeeb Hooshmand</span>
+    <span>Engineering · Music · Everything in between.</span>
+    <a href="#top">Back to top ↑</a>
+  </footer>
+);
 export default Footer;

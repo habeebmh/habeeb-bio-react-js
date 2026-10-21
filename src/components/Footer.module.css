@@ -1,6 +1,1 @@
-.copyline {
-  position: relative;
-  display: block;
-  text-align: center;
-  padding-bottom: 8px;
-}
+.footer { border-top: 1px solid var(--line); display: flex; justify-content: space-between; gap: 20px; padding: 26px 0; color: var(--muted); font-size: 11px; }.footer a { color: var(--ink); text-decoration: none; } @media (max-width: 700px) { .footer { flex-wrap: wrap; }.footer > span:nth-child(2) { display: none; } }

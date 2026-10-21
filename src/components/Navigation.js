@@ -1,18 +1,15 @@
-import React from 'react';
-import { Typography } from '@mui/material';
-
 import styles from './Navigation.module.css';
 
-const Navigation = ({ hideHome, bottom, sticky }) => {
-  return (
-    <nav className={styles.nav} style={{ position: sticky ? 'fixed' : 'relative', bottom:  bottom ? '0' : undefined, marginBottom: bottom ? '0' : '1em' }}>
-      {!hideHome && (
-        <Typography variant='body1' className={styles.navItem} component='a' href='/' color='primary' hidden={hideHome}>Home</Typography>
-      )}
-      <Typography variant='body1' className={styles.navItem} component='a' href='/papers-patents' color='primary'>Inventions</Typography>
-      <Typography variant='body1' className={styles.navItem} component='a' href='https://djhabeeb.com' target='_blank' rel='noopener noreferrer' color='primary'>Music</Typography>
-    </nav>
-  );
-}
+const Navigation = () => (
+  <nav className={styles.nav} aria-label="Main navigation">
+    <a className={styles.brand} href="/#top" aria-label="Habeeb Hooshmand home">hh<span>.</span></a>
+    <div className={styles.items}>
+      <a href="/#about">About</a>
+      <a href="/#experience">Experience</a>
+      <a href="/#research">Research</a>
+      <a className={styles.contact} href="mailto:habeeb@hooshmandenterprsies.com">Let’s connect <span aria-hidden="true">↗</span></a>
+    </div>
+  </nav>
+);
 
 export default Navigation;
