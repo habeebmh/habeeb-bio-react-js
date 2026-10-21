@@ -3,6 +3,7 @@
 .leftText { margin: 21px 24px 0 0 !important; flex: 0 0 170px !important; font-family: monospace !important; font-size: 11px !important; padding-left: 0 !important; }
 .container :global(.MuiTimelineContent-root) { min-width: 0; margin: 0 0 30px 24px; padding: 24px 30px !important; border: 1px solid var(--line); border-radius: 8px; background: var(--surface); }
 .container :global(.MuiTimelineDot-root) { box-shadow: none; margin-top: 14px; }
+.container :global(.MuiTimelineDot-root) img { object-fit: contain; }
 .container :global(.MuiTimelineConnector-root) { width: 1px; background-color: var(--line); }
 .container :global(.MuiTimelineItem-root:last-child .MuiTimelineConnector-root) { display: none; }
 .container :global(.MuiTimelineContent-root) > h3 { font-size: 21px; letter-spacing: -.4px; }

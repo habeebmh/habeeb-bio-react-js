@@ -7,7 +7,7 @@ const Description = styled('div')(({ theme }) => ({
   ...theme.typography.body1,
 }));
 
-const ImageLink = styled(Link)(({ theme }) => ({
+const ImageLink = styled(Link)(() => ({
   display: 'flex',
   height: '32px',
   width: '32px'
@@ -51,9 +51,11 @@ const CareerTimeline = () => {
             <SpecialDivider className={styles.rightDateText}/>
             <Position title={'Staff Software Engineer'} date={'Mar 2024 to Present'} description={(
               <ul>
-                <li>Lead Engineer of the Marketplace team leading a full stack team of developers on first and third party cross-sell.</li>
-                <li>Ownership of the Offers, Eligibility and Promotions (OEP) platform used in the App and Website.</li>
-                <li>Ownership over the "For you" tab where customers can browse curated first and third party product offers.</li>
+                <li>Staff Engineer leading the Customer Experience team.</li>
+                <li>Owner of the Self App and Web experiences.</li>
+                <li>Company AI Champion.</li>
+                <li>Responsible for cross-sell and up-sell initiatives and integrations with third-party vendors.</li>
+                <li>Stack: React.js and React Native (front end); Python and Node.js (back end); Bitrise (builds); AWS; LaunchDarkly (experimentation); Contentful (CMS).</li>
               </ul>
             )} />
             <Divider />
