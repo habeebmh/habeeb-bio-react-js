@@ -7,7 +7,7 @@ const Navigation = () => (
       <a href="/#about">About</a>
       <a href="/#experience">Experience</a>
       <a href="/#research">Research</a>
-      <a className={styles.contact} href="mailto:habeeb@hooshmandenterprsies.com">Let’s connect <span aria-hidden="true">↗</span></a>
+      <a className={styles.contact} href="mailto:habeeb@hooshmandenterprises.com">Let’s connect <span aria-hidden="true">↗</span></a>
     </div>
   </nav>
 );

@@ -52,3 +52,8 @@ test('keeps Self first and links the Famous in Dallas collection from its body',
   expect(screen.getByRole('link', { name: 'View the collection' })).toHaveAttribute('href', 'https://famousindallas.com');
   expect(screen.getByRole('heading', { name: 'Famous in Dallas' }).closest('a')).toBeNull();
 });
+
+test.each(['Let’s connect', 'Say hello'])('%s opens an email to the correct contact address', (name) => {
+  render(<Biography />);
+  expect(screen.getByRole('link', { name })).toHaveAttribute('href', 'mailto:habeeb@hooshmandenterprises.com');
+});

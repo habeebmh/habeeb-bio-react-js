@@ -28,7 +28,7 @@ const Biography = () => (
       <section className={styles.connect} aria-labelledby="connect-heading">
         <p className="eyebrow">KEEP IN TOUCH</p>
         <h2 id="connect-heading">Good things start with a conversation.</h2>
-        <a className="button" href="mailto:habeeb@hooshmandenterprsies.com">Say hello <span aria-hidden="true">↗</span></a>
+        <a className="button" href="mailto:habeeb@hooshmandenterprises.com">Say hello <span aria-hidden="true">↗</span></a>
       </section>
     </main>
     <Footer />
